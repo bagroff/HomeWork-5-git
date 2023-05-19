@@ -6,6 +6,7 @@ public class UserTest {
         dima.makePurchase(245);
         dima.makePurchase(200);
         dima.printTotalAmountOfSpentMoney();
+        dima.addDiscount(20);
         System.out.println();
 
         // User 2
@@ -20,5 +21,6 @@ public class UserTest {
         System.out.println(vika);
         vika.makePurchase(1000);
         vika.printTotalAmountOfSpentMoney();
+        vika.addDiscount(10);
     }
 }
