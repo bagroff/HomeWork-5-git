@@ -94,6 +94,12 @@ public class User {
         System.out.println("The total amount of spent money is: " + this.amountSpentMoney);
     }
 
+    public void addDiscount(int percent) {
+        double discount = this.amountSpentMoney * percent / 100;
+        this.amountSpentMoney -= discount;
+        System.out.println("Discount of " + percent + "% has been applied. New amount spent: $" + this.amountSpentMoney);
+    }
+
     @Override
     public String toString() {
         return "User {" + (userName != null ? "userName = '" + userName + '\'' : "") +
